@@ -1,16 +1,16 @@
-# 🧠 Mumbai Toxicity Filter - v1.0  
+#  Mumbai Toxicity Filter - v1.0  
 > _Detecting region-specific slurs and toxic Hinglish chat in real-time._
 
 ---
 
-## ⚡ What is this project?
+##  What is this project?
 
 > A targeted solution to **detect and analyze toxic chat patterns** on Indian multiplayer game servers — specifically **Valorant Mumbai**.  
 This project aims to address online abuse in region-specific forms: code-switched Hinglish slurs, cultural insults, and behaviorally toxic messages.
 
 ---
 
-## 🎯 Goals
+##  Goals
 
 > **Long-term mission:**  
 Build a highly accurate, explainable, and modular filter that can **flag**, **analyze**, and **visualize** toxicity trends across Indian game servers, beginning with Mumbai.
@@ -26,7 +26,7 @@ Build a highly accurate, explainable, and modular filter that can **flag**, **an
 
 ---
 
-## 🛠️ Structure
+##  Structure
 
 ```bash
 mumbai-toxicity-filter/
