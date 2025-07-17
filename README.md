@@ -1,61 +1,38 @@
-# Mumbai Toxicity Filter v1
-
-A lightweight Hinglish (Hindi-English) chat toxicity classifier for gaming and social platforms.
-
-## Features
-- Classifies Hinglish chat as toxic or non-toxic
-- Uses Sentence-BERT (SBERT) for embeddings
-- XGBoost for fast, lightweight classification
-- Easily upgradable for context/severity in future
-
-## Folder Structure
-```
-mumbai-toxicity-filter/
-  data/
-    dataset.csv
-  models/
-    toxicity_classifier.pkl
-  scripts/
-    train_model.py
-    embed.py
-    predict.py
-    preprocess.py
-    utils.py
-  notebooks/
-    analysis.ipynb
-  README.md
-  requirements.txt
-```
-
-## Setup
-1. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-2. (Optional) Activate your virtual environment.
-
-## Training
-To train the model on the synthetic dataset:
-```bash
-python scripts/train_model.py
-```
-Model will be saved to `models/toxicity_classifier.pkl`.
-
-## Prediction
-To predict toxicity for new messages:
-```bash
-python scripts/predict.py --text "chal na bhenc**d" "good game bhai"
-```
-Or run without arguments to use sample messages.
-
-## Data
-- `data/dataset.csv` contains synthetic Hinglish chat samples with labels (1 = toxic, 0 = non-toxic).
-
-## Analysis
-- See `notebooks/analysis.ipynb` for data exploration and confusion matrix plotting.
-
-## Upgrades
-- The codebase is structured for easy upgrades (context, severity, new models, etc.)
+# 🧠 Mumbai Toxicity Filter - v1.0  
+> _Detecting region-specific slurs and toxic Hinglish chat in real-time._
 
 ---
-MIT License 
+
+## ⚡ What is this project?
+
+> A targeted solution to **detect and analyze toxic chat patterns** on Indian multiplayer game servers — specifically **Valorant Mumbai**.  
+This project aims to address online abuse in region-specific forms: code-switched Hinglish slurs, cultural insults, and behaviorally toxic messages.
+
+---
+
+## 🎯 Goals
+
+> **Long-term mission:**  
+Build a highly accurate, explainable, and modular filter that can **flag**, **analyze**, and **visualize** toxicity trends across Indian game servers, beginning with Mumbai.
+
+> **Version 1 (this release):**  
+🚧 Initial prototype — rule-based + ML hybrid  
+✅ Code-switched text preprocessing (basic)  
+✅ Hinglish slur normalization using slang dictionary  
+✅ Basic ML classifier trained on mock data  
+✅ Real-time prediction script (command-line)  
+✅ Project modularized with preprocessing, training, and prediction scripts  
+✅ Initial trend analysis notebook (`notebooks/analysis.ipynb`)
+
+---
+
+## 🛠️ Structure
+
+```bash
+mumbai-toxicity-filter/
+├── data/                   # Dataset files (e.g., raw chat data)
+├── models/                 # Saved models
+├── notebooks/              # Jupyter notebooks for analysis
+├── scripts/                # All Python scripts (train, preprocess, predict)
+├── requirements.txt        # Dependencies
+└── README.md               # This file
