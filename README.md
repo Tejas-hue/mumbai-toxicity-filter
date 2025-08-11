@@ -16,13 +16,13 @@ This project aims to address online abuse in region-specific forms: code-switche
 Build a highly accurate, explainable, and modular filter that can **flag**, **analyze**, and **visualize** toxicity trends across Indian game servers, beginning with Mumbai.
 
 > **Version 1 (this release):**  
-🚧 Initial prototype — rule-based + ML hybrid  
-✅ Code-switched text preprocessing (basic)  
-✅ Hinglish slur normalization using slang dictionary  
-✅ Basic ML classifier trained on mock data  
-✅ Real-time prediction script (command-line)  
-✅ Project modularized with preprocessing, training, and prediction scripts  
-✅ Initial trend analysis notebook (`notebooks/analysis.ipynb`)
+ Initial prototype — rule-based + ML hybrid  
+ Code-switched text preprocessing (basic)  
+ Hinglish slur normalization using slang dictionary  
+ Basic ML classifier trained on mock data  
+ Real-time prediction script (command-line)  
+ Project modularized with preprocessing, training, and prediction scripts  
+ Initial trend analysis notebook (`notebooks/analysis.ipynb`)
 
 ---
 
